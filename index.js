@@ -20,7 +20,7 @@ document.getElementById("d3").onclick = function(){
     userage2 = Number(userage2);
     userage3 = Number(userage3);
     age= ((day3 - userage) * 31536000) + ((day2 - userage2) * 1036800) + ((day1 - userage3 + age2) * 86400); //年齡轉秒公式
-    age2= Math.floor((age - userage) / 4);
+    age2= Math.floor((day3 - userage) / 4);
 if(userage <=1900){ //當西元年小於1900 轉換文字
     result.innerHTML = "你可以活那麼久?";
 }
